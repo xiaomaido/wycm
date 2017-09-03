@@ -15,7 +15,8 @@
     font-weight: 300;
 }
 .shop-img{
-    width: 18.75rem;
+    /*width: 18.75rem;*/
+    width: 100%;
     height: 18.75rem;
     background-repeat: no-repeat;
     background-size: cover;
