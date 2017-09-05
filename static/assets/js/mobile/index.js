@@ -18,11 +18,11 @@ p.initVar = function() {
 		// ,
 		// {
 		//  	'img': 'redAD',
-		//  	'link': '../red/'
+		//  	'link': 'javascript:;'
 		// }
 		{
 		 	'img': 'bannerAD',
-		 	'link': 'javascript:;'
+		 	'link': '../banner/'
 		}	
 	];
 	page = 0;
@@ -129,58 +129,39 @@ function shopHtml(shop){
 				'<div class="userinfo">',
 					'<div class="objname">',shop.get("name"),'</div>',
 					'<div class="follow j_follow">优惠信息</div>',
-					// '<div class="usersepcial">【',shop.get("addr"),'】',shop.get("slogan"),'</div>',
-					// '<ul class="usertags">',getTagHtml(shop.get('tags')),'</ul>',
 				'</div>',
 			'</div>',
 		'</li>'
 	].join('');
 }
-function getTagHtml(tag){
-  var arr = [],tagArr = [];
-  if(tag){
-    tag = tag.replace(/，/g," ");
-    tag = tag.replace(/、/g," ");
-    tag = tag.replace(/,/g," ");
-    tagArr = tag.split(" ");
-    if(tagArr.length > 5){
-      tagArr.length = 5;
-    }
-    arr.push('<li><img src="',imgpath,'tag.png" class="desc-tag-img"></li>');
-    for (var i = 0,l = tagArr.length; i < l; i++) {
-      arr.push('<li>',tagArr[i],'</li>');
-    };
-  }
-  return arr.join('');
-}
-//获取滚动条当前的位置 
-function getScrollTop() { 
-	var scrollTop = 0; 
-    if (document.documentElement && document.documentElement.scrollTop) { 
-    	scrollTop = document.documentElement.scrollTop; 
-    } 
-    else if (document.body) { 
-    	scrollTop = document.body.scrollTop; 
-    } 
-    return scrollTop; 
-} 
+// //获取滚动条当前的位置 
+// function getScrollTop() { 
+// 	var scrollTop = 0; 
+//     if (document.documentElement && document.documentElement.scrollTop) { 
+//     	scrollTop = document.documentElement.scrollTop; 
+//     } 
+//     else if (document.body) { 
+//     	scrollTop = document.body.scrollTop; 
+//     } 
+//     return scrollTop; 
+// } 
 
-//获取当前可是范围的高度 
-function getClientHeight() { 
-	var clientHeight = 0; 
-    if (document.body.clientHeight && document.documentElement.clientHeight) { 
-   		clientHeight = Math.min(document.body.clientHeight, document.documentElement.clientHeight); 
-    } 
-    else { 
-    	clientHeight = Math.max(document.body.clientHeight, document.documentElement.clientHeight); 
-    } 
-    return clientHeight; 
-}
+// //获取当前可是范围的高度 
+// function getClientHeight() { 
+// 	var clientHeight = 0; 
+//     if (document.body.clientHeight && document.documentElement.clientHeight) { 
+//    		clientHeight = Math.min(document.body.clientHeight, document.documentElement.clientHeight); 
+//     } 
+//     else { 
+//     	clientHeight = Math.max(document.body.clientHeight, document.documentElement.clientHeight); 
+//     } 
+//     return clientHeight; 
+// }
 
-//获取文档完整的高度 
-function getScrollHeight() { 
-	return Math.max(document.body.scrollHeight, document.documentElement.scrollHeight); 
-} 
+// //获取文档完整的高度 
+// function getScrollHeight() { 
+// 	return Math.max(document.body.scrollHeight, document.documentElement.scrollHeight); 
+// } 
 // window.onscroll = function () { 
 // 	if (getScrollTop() + getClientHeight() == getScrollHeight()) { 
 // 		p.loadShops();
