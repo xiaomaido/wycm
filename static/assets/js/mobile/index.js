@@ -22,7 +22,7 @@ p.initVar = function() {
 		// }
 		{
 		 	'img': 'bannerAD',
-		 	'link': '../banner/'
+		 	'link': '../banner/?vId='+(+new Date())
 		}	
 	];
 	page = 0;
