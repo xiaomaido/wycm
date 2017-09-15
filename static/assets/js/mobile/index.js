@@ -21,7 +21,7 @@ p.initVar = function() {
 		//  	'link': 'javascript:;'
 		// }
 		{
-		 	'img': 'bannerAD1',
+		 	'img': 'bannerAD2',
 		 	'link': '../banner/?vId='+(+new Date())
 		}	
 	];
