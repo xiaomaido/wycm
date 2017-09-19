@@ -26,5 +26,13 @@
 		<div class="out-wrap" style="visibility:visible">
         	<img src="../../static/assets/images/mobile/change.jpg?vId=170912v1" />
 		</div>
+        <script>
+            var docEl = document.documentElement,resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+            var clientWidth = docEl.clientWidth,rootV = 20,normalV = 375,maxV = 420;
+            clientWidth = (clientWidth>maxV) ? maxV : clientWidth;
+            var fontSize = rootV * (clientWidth / normalV);
+            docEl.style.fontSize = fontSize + 'px';
+            window.addEventListener(resizeEvt, function() { clientWidth = docEl.clientWidth;docEl.style.fontSize = rootV * (clientWidth / normalV) + 'px'; }, false);
+        </script>
     </body>
 </html>
