@@ -12,18 +12,17 @@ p.initVar = function() {
 	$j_loadmore = $out_wrap.find('.j_loadmore');
 	banners = [
 		// {
-		// 	'img': 'bannerAD',
-		// 	'link': 'https://mp.weixin.qq.com/s?__biz=MjM5MzU3MTA1NA==&mid=2653108734&idx=1&sn=4559698c0d0c0236c2557742a485250f&scene=1&srcid=0824TT8NgemrGUjBH8gk3REF&key=cf237d7ae24775e86a352ba76c37cf590b880506cdf920e00576d2252161a5e5ed0533afb68528394cd3c42f20b21c69&ascene=0&uin=MjgwNzc0MDk1&devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.10.5+build(14F1909)&version=11020201&pass_ticket=FUNKFbOskYv2Kfi%2FI9%2FrsV7U27%2BKIEllnB6jIW9ChlvI%2BxTV2PxmxwkC7kPsA0wb'
-		// },
-		// ,
-		// {
 		//  	'img': 'redAD',
 		//  	'link': 'javascript:;'
 		// }
 		{
 		 	'img': 'bannerAD2',
 		 	'link': '../banner/?vId='+(+new Date())
-		}	
+		}
+		,{
+			'img': 'bannerAD3_1',
+			'link': 'https://v.qq.com/x/page/e0557cxmkm1.html'
+	   	}		
 	];
 	page = 0;
 	size = 100;
